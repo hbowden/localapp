@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rimraf node_modules/react-atlas && rimraf node_modules/react-atlas-core && rimraf node_modules/react-atlas-default-theme"
+    "clean": "rimraf node_modules/react-atlas && rimraf node_modules/react-atlas-core && rimraf node_modules/react-atlas-default-theme",
+    "relaunch": "npm run clean && npm install && webpack && node index.js"
   },
   "author": "",
   "license": "ISC",
