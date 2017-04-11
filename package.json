@@ -25,10 +25,6 @@
     "postcss-import": "^9.1.0",
     "react-atlas": "file:C:/dev/react-atlas/packages/react-atlas",
     "react-atlas-core": "file:C:/dev/react-atlas/packages/react-atlas-core",
-    "react-atlas-default-theme": "file:C:/dev/react-atlas/packages/react-atlas-default-theme",
-    "react-atlas-new-theme": "file:C:/dev/react-atlas-new-theme",
-    "react-router": "^3.0.2",
-    "redux": "^3.6.0",
     "rimraf": "^2.6.1",
     "style-loader": "^0.15.0",
     "webpack": "^2.2.1"
