@@ -1,6 +1,7 @@
 
 var path = require('path');
 var webpack = require("webpack");
+var BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
   entry: [
@@ -19,8 +20,15 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: 'style!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]' 
+        loader: 'style!css-loader?modules&importLoaders=1&localIdentName=ra_[name]__[local]' 
       }
     ]
-  }
+  },
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+      }
+    })
+  ]
 }

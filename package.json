@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf node_modules/react-atlas && rimraf node_modules/react-atlas-core && rimraf node_modules/react-atlas-default-theme",
-    "relaunch": "npm run clean && npm install && webpack && cp ../react-atlas/packages/react-atlas-default-theme/lib/atlasThemes.min.css public/scripts && node index.js"
+    "relaunch": "npm run clean && npm install && webpack && cp ../react-atlas/packages/react-atlas-default-theme/lib/atlasThemes.min.css public/scripts && node index.js",
+    "nostyle": "npm run clean && npm install && webpack && node index.js"
   },
   "author": "",
   "license": "ISC",
@@ -25,8 +26,12 @@
     "postcss-import": "^9.1.0",
     "react-atlas": "file:C:/dev/react-atlas/packages/react-atlas",
     "react-atlas-core": "file:C:/dev/react-atlas/packages/react-atlas-core",
+    "react-atlas-new-theme": "file:C:/dev/react-atlas-new-theme",
     "rimraf": "^2.6.1",
     "style-loader": "^0.15.0",
     "webpack": "^2.2.1"
+  },
+  "devDependencies": {
+    "webpack-bundle-analyzer": "^2.8.2"
   }
 }
