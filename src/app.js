@@ -1,9 +1,9 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Avatar, Button, Card, Checkbox, Drawer, Dialog, Form, GridCol, Header, Hint, Input, Media, Overlay, Radio, RadioGroup, Snackbar, Switch, Slider, Tab, Tabs, TabContent, Tooltip, ProgressBar, List, ListItem, ListText } from 'react-atlas';
-// var a11y = require('react-a11y');
-// a11y(React);
+import { Button, Dropdown } from 'react-atlas';
+var a11y = require('react-a11y');
+a11y(React);
 
 export class App extends React.Component {
   constructor(props) {
@@ -11,22 +11,27 @@ export class App extends React.Component {
     this.state = {};
   }
 
-  clickHandler(event, data) {
-    console.log(event);
+  clickHandler(event) {
+    console.log("event: ", event);
   }
                                                                                 
   render() {
     return (
       <div>
-        <Checkbox
-          label="Checkbox 1"
-          inline
-        />
-        <Checkbox
-          inline
-          label="Inline checkbox 1"
-          onClick={this.clickHandler}
-        />
+        <Button primary onClick={this.clickHandler} >Help</Button>
+        <Button secondary>Sugar</Button>
+        <Button primary outline>Outline</Button>
+        <Button success outline>Success</Button>
+        <Button warning>Warning</Button>
+        <Button danger>Danger</Button>
+        <Button link>link</Button>
+        <Button disabled>disabled</Button>
+        <Button large>large</Button>
+        <Button small>small</Button>
+        <Dropdown>
+          <li>Cow</li>
+          <li>Test</li>
+        </Dropdown>
       </div>
     )
   }
