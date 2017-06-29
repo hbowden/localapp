@@ -1,7 +1,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Avatar, Button, Checkbox, Dropdown, Input } from 'react-atlas';
+import { Avatar, Button, Checkbox, Dropdown, Input, Switch } from 'react-atlas';
 
 export class App extends React.Component {
   constructor(props) {
@@ -63,13 +63,56 @@ export class App extends React.Component {
         <p>Small default Button</p>
         <Button small>small</Button>
         <p>Checkbox</p>
-
-
         <p>Dropdown</p>
         <Dropdown>
           <li>Cow</li>
           <li>Test</li>
         </Dropdown>
+        <p>Default Text Input</p>
+        <Input type="text"/>
+        <p>Small Input</p>
+        <Input type="text" small/>
+        <p>Medium Input</p>
+        <Input type="text" medium/>
+        <p>Large Input</p>
+        <Input type="text" large/>
+        <p>Text Input with placeholder</p>
+        <Input type="text" placeholder="Add information"/>
+        <p>Text input with required validation</p>
+        <Input type="text" required/>
+        <p>Required text input with required text</p>
+        <Input type="text" required requiredText="Custom required message"/>
+        <p>Text input with maximum length validation</p>
+        <Input type="text" maxLength={20}/>
+        <p>Default textarea</p>
+        <Input type="text" multiline/>
+        <p>Default checkbox input</p>
+        <Input type="checkbox"/>
+        <p>Default radio input</p>
+        <Input type="radio"/>
+        <p>Email input</p>
+        <Input type="email"/>
+        <p>Password input</p>
+        <Input type="password"/>
+        <p>Disabled input</p>
+        <Input type="text" disabled/>
+        <p>Hidden input</p>
+        <Input type="text" hidden/>
+        <p>Default Switch</p>
+        <Switch/>
+        <p>Small Switch</p>
+        <Switch small/>
+        <p>Medium Switch</p>
+        <Switch medium/>
+        <p>Large Switch</p>
+        <Switch large/>
+        <p>Multiple switches tied to same behavior (name prop)</p>
+        <Switch name="customFeature"/>
+        <Switch name="customFeature"/>
+        <Switch name="customFeature"/>
+        <p>Set other colors for on/off states (hex, rgb, css-valid color name)</p>
+        <Switch onColor="#00bbaa" offColor="#000000"/>
+        <Switch onColor="green" offColor="black"/>
       </div>
     )
   }

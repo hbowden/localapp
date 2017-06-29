@@ -9955,6 +9955,11 @@ var App = exports.App = function (_React$Component) {
         _react2.default.createElement(
           'p',
           null,
+          'Checkbox'
+        ),
+        _react2.default.createElement(
+          'p',
+          null,
           'Dropdown'
         ),
         _react2.default.createElement(
@@ -9970,7 +9975,136 @@ var App = exports.App = function (_React$Component) {
             null,
             'Test'
           )
-        )
+        ),
+        _react2.default.createElement(
+          'p',
+          null,
+          'Default Text Input'
+        ),
+        _react2.default.createElement(_reactAtlas.Input, { type: 'text' }),
+        _react2.default.createElement(
+          'p',
+          null,
+          'Small Input'
+        ),
+        _react2.default.createElement(_reactAtlas.Input, { type: 'text', small: true }),
+        _react2.default.createElement(
+          'p',
+          null,
+          'Medium Input'
+        ),
+        _react2.default.createElement(_reactAtlas.Input, { type: 'text', medium: true }),
+        _react2.default.createElement(
+          'p',
+          null,
+          'Large Input'
+        ),
+        _react2.default.createElement(_reactAtlas.Input, { type: 'text', large: true }),
+        _react2.default.createElement(
+          'p',
+          null,
+          'Text Input with placeholder'
+        ),
+        _react2.default.createElement(_reactAtlas.Input, { type: 'text', placeholder: 'Add information' }),
+        _react2.default.createElement(
+          'p',
+          null,
+          'Text input with required validation'
+        ),
+        _react2.default.createElement(_reactAtlas.Input, { type: 'text', required: true }),
+        _react2.default.createElement(
+          'p',
+          null,
+          'Required text input with required text'
+        ),
+        _react2.default.createElement(_reactAtlas.Input, { type: 'text', required: true, requiredText: 'Custom required message' }),
+        _react2.default.createElement(
+          'p',
+          null,
+          'Text input with maximum length validation'
+        ),
+        _react2.default.createElement(_reactAtlas.Input, { type: 'text', maxLength: 20 }),
+        _react2.default.createElement(
+          'p',
+          null,
+          'Default textarea'
+        ),
+        _react2.default.createElement(_reactAtlas.Input, { type: 'text', multiline: true }),
+        _react2.default.createElement(
+          'p',
+          null,
+          'Default checkbox input'
+        ),
+        _react2.default.createElement(_reactAtlas.Input, { type: 'checkbox' }),
+        _react2.default.createElement(
+          'p',
+          null,
+          'Default radio input'
+        ),
+        _react2.default.createElement(_reactAtlas.Input, { type: 'radio' }),
+        _react2.default.createElement(
+          'p',
+          null,
+          'Email input'
+        ),
+        _react2.default.createElement(_reactAtlas.Input, { type: 'email' }),
+        _react2.default.createElement(
+          'p',
+          null,
+          'Password input'
+        ),
+        _react2.default.createElement(_reactAtlas.Input, { type: 'password' }),
+        _react2.default.createElement(
+          'p',
+          null,
+          'Disabled input'
+        ),
+        _react2.default.createElement(_reactAtlas.Input, { type: 'text', disabled: true }),
+        _react2.default.createElement(
+          'p',
+          null,
+          'Hidden input'
+        ),
+        _react2.default.createElement(_reactAtlas.Input, { type: 'text', hidden: true }),
+        _react2.default.createElement(
+          'p',
+          null,
+          'Default Switch'
+        ),
+        _react2.default.createElement(_reactAtlas.Switch, null),
+        _react2.default.createElement(
+          'p',
+          null,
+          'Small Switch'
+        ),
+        _react2.default.createElement(_reactAtlas.Switch, { small: true }),
+        _react2.default.createElement(
+          'p',
+          null,
+          'Medium Switch'
+        ),
+        _react2.default.createElement(_reactAtlas.Switch, { medium: true }),
+        _react2.default.createElement(
+          'p',
+          null,
+          'Large Switch'
+        ),
+        _react2.default.createElement(_reactAtlas.Switch, { large: true }),
+        _react2.default.createElement(
+          'p',
+          null,
+          'Multiple switches tied to same behavior (name prop)'
+        ),
+        _react2.default.createElement(_reactAtlas.Switch, { name: 'customFeature' }),
+        _react2.default.createElement(_reactAtlas.Switch, { name: 'customFeature' }),
+        _react2.default.createElement(_reactAtlas.Switch, { name: 'customFeature' }),
+        _react2.default.createElement(
+          'p',
+          null,
+          'Set other colors for on/off states (hex, rgb, css-valid color name)'
+        ),
+        _react2.default.createElement(_reactAtlas.Switch, { onColor: '#00bbaa', offColor: '#000000' }),
+        _react2.default.createElement(_reactAtlas.Switch, { onColor: 'green', offColor: 'black' })
       );
     }
   }]);
