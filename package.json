@@ -23,8 +23,7 @@
     "postcss-cssnext": "^2.10.0",
     "postcss-import": "^9.1.0",
     "react-atlas": "file:C:/dev/react-atlas/packages/react-atlas",
-    "react-atlas-core": "file:C:/dev/react-atlas/packages/react-atlas-core",
-    "react-atlas-new-theme": "file:C:/dev/react-atlas-new-theme",
+    "react-atlas-core": "file:C:/dev/react-atlas/packages/react-atlas-core"
     "rimraf": "^2.6.1",
     "style-loader": "^0.15.0",
     "webpack": "^2.2.1"

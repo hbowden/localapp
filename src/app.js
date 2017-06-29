@@ -1,7 +1,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Avatar, Button, Dropdown } from 'react-atlas';
+import { Avatar, Button, Checkbox, Dropdown, Input } from 'react-atlas';
 
 export class App extends React.Component {
   constructor(props) {
@@ -62,6 +62,9 @@ export class App extends React.Component {
         <Button large>large</Button>
         <p>Small default Button</p>
         <Button small>small</Button>
+        <p>Checkbox</p>
+
+
         <p>Dropdown</p>
         <Dropdown>
           <li>Cow</li>
