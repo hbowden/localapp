@@ -2,8 +2,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Button, Dropdown } from 'react-atlas';
-var a11y = require('react-a11y');
-a11y(React);
 
 export class App extends React.Component {
   constructor(props) {
