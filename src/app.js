@@ -1,7 +1,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Avatar, Button, Checkbox, Dropdown, Input, Switch } from 'react-atlas';
+import { Avatar, Button, Checkbox, Dropdown, Input, Hint, Switch } from 'react-atlas';
 
 export class App extends React.Component {
   constructor(props) {
@@ -63,6 +63,65 @@ export class App extends React.Component {
         <p>Small default Button</p>
         <Button small>small</Button>
         <p>Checkbox</p>
+        <Checkbox
+          label="Checkbox"
+        />
+        <p>Checked Checkbox</p>
+        <Checkbox
+          label="Checkbox Checked"
+          checked
+        />
+        <p>Disabled Checkbox</p>
+        <Checkbox
+          label="Disabled Checkbox"
+        />
+        <p>Left Label Checkbox</p>
+        <Checkbox
+          label="Checkbox Left Label"
+          labelPosition="left"
+          checked
+        />
+        <p>No Label Checkbox</p>
+        <Checkbox/>
+        <p>No Label Checked Checkbox</p>
+        <Checkbox checked/>
+        <p>Required Checkbox</p>
+        <Checkbox required/>
+        <p>Checkbox Group</p>
+        <CheckboxGroup title="Checkbox Group" name="checkboxGroup">
+          <Checkbox label="Checkbox 1" checked />
+          <Checkbox label="Checkbox 2" />
+          <Checkbox label="Checkbox 3" />
+        </CheckboxGroup>
+        <p>Inline Checkbox Group</p>
+        <CheckboxGroup inline title="Inline Checkbox Group" name="inlineGroup">
+          <Checkbox
+            label="Checkbox Inline"
+          />
+          <Checkbox
+            label="Checkbox Inline Checked"
+            checked
+          />
+        </CheckboxGroup>
+        <p>Checkbox Group with Checked Minimum</p>
+        <CheckboxGroup inline title="Checkbox Group: Select at least one" name="inlineGroup" min={1} limitMessage="This is a custom message. Please select at least {0} checkboxes below.">
+          <Checkbox
+            label="Checkbox"
+          />
+          <Checkbox
+            label="Checkbox"
+          />
+        </CheckboxGroup>
+        <p>Checkbox Group with Checked Maximum</p>
+        <CheckboxGroup inline title="Checkbox Group: Select no more than one" name="inlineGroup" max={1} limitMessage="This is a custom message. Please select no more than {0} checkboxes below.">
+          <Checkbox
+            label="Checkbox"
+          />
+          <Checkbox
+            label="Checkbox Checked"
+            checked
+          />
+        </CheckboxGroup>
         <p>Dropdown</p>
         <Dropdown>
           <li>Cow</li>
@@ -98,6 +157,12 @@ export class App extends React.Component {
         <Input type="text" disabled/>
         <p>Hidden input</p>
         <Input type="text" hidden/>
+        <p>Default Hint</p>
+        <Hint>This is a hint text</Hint>
+        <p>Passing text as prop (this will override children)</p>
+        <Hint text="This is a hint text" />
+        <p>Hint Custom CSS</p>
+        <Hint className="custom hint-new">This is a hint text</Hint>
         <p>Default Switch</p>
         <Switch/>
         <p>Small Switch</p>
