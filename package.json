@@ -1,6 +1,6 @@
 {
   "name": "app",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Test React Atlas App",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,8 @@
     "clean": "rimraf node_modules/react-atlas && rimraf node_modules/react-atlas-core && rimraf node_modules/react-atlas-default-theme",
     "prod": "npm run clean && npm install && webpack && cp ../react-atlas/packages/react-atlas-default-theme/lib/atlasThemes.min.css public/scripts && node index.js",
     "dev": "npm run clean && npm install && webpack && node index.js",
-    "analyze": "npm run clean && npm install && webpack --config webpack.analyzer.config.js && node index.js"
+    "analyze": "npm run clean && npm install && webpack --config webpack.analyzer.config.js && node index.js",
+    "start": "node index.js"
   },
   "author": "Harrison Bowden",
   "license": "ISC",
@@ -25,6 +26,7 @@
     "postcss-import": "^9.1.0",
     "react-atlas": "file:C:/dev/react-atlas/packages/react-atlas",
     "react-atlas-core": "file:C:/dev/react-atlas/packages/react-atlas-core",
+    "react-atlas-default-theme": "file:C:/dev/react-atlas/packages/react-atlas-default-theme",
     "rimraf": "^2.6.1",
     "style-loader": "^0.15.0",
     "webpack": "^2.2.1",
