@@ -1,6 +1,7 @@
 
 var path = require('path');
 var webpack = require("webpack");
+var HtmlWebpackPlugin  = require("html-webpack-plugin")
 
 module.exports = {
   entry: [
@@ -28,6 +29,12 @@ module.exports = {
       'process.env': {
         'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
       }
-    })
-  ]
+    }),
+    new webpack.NamedModulesPlugin(),
+    new HtmlWebpackPlugin()
+  ],
+  devServer: {
+    hot: true,
+    contentBase: "./src"
+  }
 }

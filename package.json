@@ -9,7 +9,8 @@
     "prod": "npm run clean && npm install && webpack && cp ../react-atlas/packages/react-atlas-default-theme/lib/atlasThemes.min.css public/scripts && node index.js",
     "dev": "npm run clean && npm install && webpack && node index.js",
     "analyze": "npm run clean && npm install && webpack --config webpack.analyzer.config.js && node index.js",
-    "start": "node index.js"
+    "start": "node index.js",
+    "devserver": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --open --hot"
   },
   "author": "Harrison Bowden",
   "license": "ISC",
@@ -24,12 +25,17 @@
     "express": "^4.14.0",
     "postcss-cssnext": "^2.10.0",
     "postcss-import": "^9.1.0",
-    "react-atlas": "file:C:/dev/react-atlas/packages/react-atlas",
-    "react-atlas-core": "file:C:/dev/react-atlas/packages/react-atlas-core",
-    "react-atlas-default-theme": "file:C:/dev/react-atlas/packages/react-atlas-default-theme",
+    "react-atlas": "file:D:/dev/react-atlas/packages/react-atlas",
+    "react-atlas-core": "file:D:/dev/react-atlas/packages/react-atlas-core",
+    "react-atlas-default-theme": "file:D:/dev/react-atlas/packages/react-atlas-default-theme",
     "rimraf": "^2.6.1",
     "style-loader": "^0.15.0",
     "webpack": "^2.2.1",
     "webpack-bundle-analyzer": "^2.8.2"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^2.29.0",
+    "loglevel": "^1.4.1",
+    "webpack-dev-server": "^2.6.0"
   }
 }
