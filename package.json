@@ -9,7 +9,9 @@
     "prod": "npm run clean && npm install && webpack && cp ../react-atlas/packages/react-atlas-default-theme/lib/atlasThemes.min.css public/scripts && node index.js",
     "dev": "npm run clean && npm install && webpack && node index.js",
     "analyze": "npm run clean && npm install && webpack --config webpack.analyzer.config.js && node index.js",
-    "start": "node index.js"
+    "start": "node index.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Harrison Bowden",
   "license": "ISC",
@@ -30,6 +32,8 @@
     "rimraf": "^2.6.1",
     "style-loader": "^0.15.0",
     "webpack": "^2.2.1",
-    "webpack-bundle-analyzer": "^2.8.2"
-  }
+    "webpack-bundle-analyzer": "^2.8.2",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
