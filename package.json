@@ -29,7 +29,7 @@
     "react-atlas-default-theme": "file:C:/dev/react-atlas/packages/react-atlas-default-theme",
     "rimraf": "^2.6.1",
     "style-loader": "^0.15.0",
-    "webpack": "^2.2.1",
+    "webpack": "^3.11.0",
     "webpack-bundle-analyzer": "^2.8.2"
   }
 }
